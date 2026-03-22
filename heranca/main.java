@@ -1,7 +1,13 @@
 package heranca;
 
-public class main {
+public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        Pessoa p = new Pessoa();
+        p.nome = "Yan";
+        //  p.comissao = 8.4; // Erro de compilação, pois a classe Pessoa não tem o atributo comissao
+
+        Vendedor v = new Vendedor();
+        v.nome = "Lais";
+        v.comissao = 8.6;
     }
 }
