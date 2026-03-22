@@ -1,0 +1,49 @@
+{
+    // Use o IntelliSense para saber mais sobre os atributos possíveis.
+    // Focalizar para exibir as descrições dos atributos existentes.
+    // Para obter mais informações, acesse: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "vetor",
+            "request": "launch",
+            "mainClass": "vetor",
+            "projectName": "logicaProgJava_bcd5dd48"
+        },
+        {
+            "type": "java",
+            "name": "exercicioJava",
+            "request": "launch",
+            "mainClass": "exercicioJava",
+            "projectName": "logicaProgJava_bcd5dd48"
+        },
+        {
+            "type": "java",
+            "name": "HelloWorld",
+            "request": "launch",
+            "mainClass": "HelloWorld",
+            "projectName": "logicaProgJava_bcd5dd48"
+        },
+        {
+            "type": "java",
+            "name": "exercicio",
+            "request": "launch",
+            "mainClass": "exercicio",
+            "projectName": "logicaProgJava_bcd5dd48"
+        },
+        {
+            "type": "java",
+            "name": "metodoJava",
+            "request": "launch",
+            "mainClass": "metodoJava",
+            "projectName": "logicaProgJava_bcd5dd48"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        }
+    ]
+}
