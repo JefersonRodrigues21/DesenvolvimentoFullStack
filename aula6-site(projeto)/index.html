@@ -35,7 +35,7 @@
 
         <figure>
             <img src="./img/nossosPacotes/gramadoRs.jpg" alt="Portal de Gramado, RS" width="500px">
-            <figcaption>Gramado</figcaption> 
+            <figcaption>Gramado</figcaption>
             <!-- figcaption é a legenda da imagem, e deve ser usada para descrever a imagem, ou dar mais informações sobre ela. -->
         </figure>
 
@@ -52,7 +52,8 @@
 
     <video controls width="500px">
         <source src="./video/praiaCopacabana.mp4" type="video/mp4">
-        Seu navegador não suporta o elemento de vídeo. <a href="https://www.istockphoto.com/br/v%C3%ADdeo/vista-a%C3%A9rea-da-praia-de-ipanema-no-rio-de-janeiro-brasil-gm503772424-83299209?utm_source=pixabay&utm_medium=affiliate&utm_campaign=sponsored_video&utm_content=srp_topbanner_media&utm_term=praia+de+copacabana"></a>
+        Seu navegador não suporta o elemento de vídeo. <a
+            href="https://www.istockphoto.com/br/v%C3%ADdeo/vista-a%C3%A9rea-da-praia-de-ipanema-no-rio-de-janeiro-brasil-gm503772424-83299209?utm_source=pixabay&utm_medium=affiliate&utm_campaign=sponsored_video&utm_content=srp_topbanner_media&utm_term=praia+de+copacabana"></a>
     </video>
 
     <section>
@@ -72,7 +73,7 @@
                     <td>Gramado, RS</td> <!-- td é a célula da tabela, onde ficam os dados de cada coluna. -->
                     <td>R$ 2.500,00</td>
                     <td>5 dias</td>
-                </tr> 
+                </tr>
                 <tr>
                     <td>Porto de Galinhas, PE</td>
                     <td>R$ 3.000,00</td>
@@ -86,7 +87,8 @@
             </tbody>
             <tfoot>
                 <tr>
-                    <td colspan="3">*Valores sujeitos a alterações sem aviso prévio</td> <!-- colspan é o atributo que define quantas colunas a célula deve ocupar. -->
+                    <td colspan="3">*Valores sujeitos a alterações sem aviso prévio</td>
+                    <!-- colspan é o atributo que define quantas colunas a célula deve ocupar. -->
                 </tr>
             </tfoot>
         </table>
@@ -94,24 +96,36 @@
     <section>
         <h2>Orçamento</h2>
         <form action="" method="get">
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required>
-            <br><br>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <br><br>
-            <label for="">Data de ida:</label> <br>
-            <input type="date" id="dataIda" name="dataIda" required>
-            <br><br>
-            <label for="">Data de volta:</label> <br>
-            <input type="date" id="dataVolta" name="dataVolta" required>
-            <br><br>
-            <label for="">Quantidade de pessoas</label> <br>
-            <input type="number" id="quantidadePessoas" name="quantidadePessoas" min="1" required>
-            <br><br>
+
+            <fieldset>
+                <legend>Dados do usuário</legend>
+                <label for="nome">Nome:</label> <!-- label é o elemento que define o rótulo de um campo de formulário, e for é o atributo que define a qual campo o rótulo se refere. -->
+                <input type="text" id="nome" name="nome" required><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="">Data de ida:</label> <br>
+                <input type="date" id="dataIda" name="dataIda" required><br><br>
+                <label for="">Data de volta:</label> <br>
+                <input type="date" id="dataVolta" name="dataVolta" required><br><br>
+                <label for="">Quantidade de pessoas</label> <br>
+                <input type="number" id="quantidadePessoas" name="quantidadePessoas" min="1" required><br><br>
+            </fieldset>
+
+            <fieldset>
+                <!-- fieldset é o elemento que agrupa os elementos de um formulário, e legend é a legenda do fieldset, que deve ser usada para descrever o grupo de elementos. -->
+                <legend for="">Qual pacote deseja contratar?</legend>
+                <label for="">
+                    <input type="checkbox" name="passagens" id="gramado" value="Gramado, RS">Gramado. <br>
+                </label>
+                <label for="">
+                    <input type="checkbox" name="passagens" id="portoDeGalinhas" value="Porto de Galinhas, PE">Porto de Galinhas. <br>
+                </label>
+                <label for=""><input type="checkbox" name="passagens" id="rioDeJaneiro" value="Rio de Janeiro, RJ">Rio de Janeiro.<br></label>
+            </fieldset>
+
             <label for="mensagem">Mensagem:</label><br>
-            <textarea id="mensagem" name="mensagem" rows="4" cols="50" required></textarea>
-            <br><br>
+            <textarea id="mensagem" name="mensagem" rows="4" cols="50" required></textarea><br><br>
+
             <input type="submit" value="Enviar">
         </form>
     </section>
