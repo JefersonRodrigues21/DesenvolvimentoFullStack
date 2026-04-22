@@ -24,3 +24,9 @@ h2 {
     text-transform: uppercase;
     color: #303030;
 }
+
+.carousel-caption h5 {
+    font-size: 50px;
+    color: #ffc107;
+    text-shadow: 2px 2px 2px black;
+}
