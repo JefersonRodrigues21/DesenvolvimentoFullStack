@@ -1,32 +1,22 @@
-* {
-    margin: 0;
-    /*padding: 0;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 22px;*/
-} 
-
-header p {
-    color: #ffffff;
-    font-weight: 600;
-}
-
 h1 {
-    font-size: 60px;
-    color: #303030;
-    padding: 15px;
-    color: white;
-    text-align: center;
+    font-size: 63px;
+    color: #ffffff;
 }
 
 h2 {
-    font-size: 24px;
+    font-size: 54px;
     font-weight: 600;
-    text-transform: uppercase;
     color: #303030;
 }
 
 .carousel-caption h5 {
-    font-size: 50px;
+    font-size: 80px;
     color: #ffc107;
     text-shadow: 2px 2px 2px black;
+}
+
+footer p {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 5px;
 }
