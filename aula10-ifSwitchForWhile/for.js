@@ -38,9 +38,19 @@ console.log("-------------------------------------------------------------");
 
 let car = [
   { marca: "Volvo", modelo: "Xc 60", ano: 2026 },
-  { marca: "Audi", modelo: "Audi A3", ano: 2026 },
+  { marca: "Audi", modelo: "Audi A3", ano: 2025 },
 ];
 
 for (let característica in car) {
-  console.log(car[característica]);
+  console.log(car[característica].marca);
+}
+
+for (let c of car){
+    console.log(c.ano)
+}
+
+let c = 5;
+while (c <= 10){
+    console.log(c);
+    c++;
 }
