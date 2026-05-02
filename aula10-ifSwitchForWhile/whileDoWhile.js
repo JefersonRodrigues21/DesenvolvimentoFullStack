@@ -32,3 +32,4 @@ do{
     console.log(t);
     t++
 }while(t < 1)
+    
