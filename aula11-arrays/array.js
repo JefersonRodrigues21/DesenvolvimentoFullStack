@@ -9,7 +9,9 @@ let valores = [8,1,7,2,9];
 
 console.log(valores[3]);
 
-for(let pos = 0; pos < valores.length; pos++){
+console.log(`Array invertido ${valores.reverse()}`);
+
+for(let pos = 0; pos < valores.length; pos++){ //
     console.log(`Posição: ${pos} valor: ${valores[pos]}`);
 };
 
@@ -20,3 +22,14 @@ carros[1] = 'Jeep';
 let motos = new Array('BMW', 'YAMAHA', 'HONDA');
 
 // CALCULAR A MÉDIA DE TODOS SO NÚMEROS DE UMA ARRAY
+console.log('---------------------------------------------------');
+
+let soma = 0;
+
+for (let pos = 0; pos < valores.length; pos++){
+    soma += valores[pos];
+}
+
+let media = soma/valores.length;
+
+console.log(media);
