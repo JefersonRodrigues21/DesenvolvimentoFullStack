@@ -9,9 +9,9 @@ let valores = [8,1,7,2,9];
 
 console.log(valores[3]);
 
-console.log(`Array invertido ${valores.reverse()}`);
+console.log(`Array invertido ${valores.reverse()}`); // Coloca os elementos em ordem contrária.
 
-for(let pos = 0; pos < valores.length; pos++){ //
+for(let pos = 0; pos < valores.length; pos++){ // length - número de elementos da array.
     console.log(`Posição: ${pos} valor: ${valores[pos]}`);
 };
 
@@ -33,3 +33,6 @@ for (let pos = 0; pos < valores.length; pos++){
 let media = soma/valores.length;
 
 console.log(media);
+
+let arr = new Array (10,20,30);
+console.log("arr.constructor é: " + arr.constructor);
