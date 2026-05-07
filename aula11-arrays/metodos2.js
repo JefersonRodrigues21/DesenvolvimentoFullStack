@@ -1,3 +1,4 @@
+// DESCOMENTE O CÓDIGO, EXERCÍCIO POR EXERCÍCIO
 //? Método filter(), recebe cada elemento do array e aplica uma instrução condicional a ele. Se essa condição for verdadeira, o elemento é colocado no array de resultado. Se for falsa, o elemento não é colocado lá.
 // let numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
@@ -7,7 +8,7 @@
 // console.log("--------------------------------------------------------------------------");
 
 // let numerosFiltrados = numeros.filter(function (valor) {
-//   // função
+   // função
 //   return valor > 5;
 // });
 // console.log(numerosFiltrados);
@@ -74,7 +75,7 @@
 // });
 // console.log(modifiedArr);
 
-// // ou pode fazer assim
+// ou pode fazer assim
 
 // let arr2 = [3, 4, 5, 6];
 
@@ -91,7 +92,7 @@
 // });
 // console.log(multip);
 
-// // Outra forma de usar o MAP
+// Outra forma de usar o MAP
 
 // let funcionarios = [
 //     {nome: 'Luiz', idade: 62},
@@ -102,4 +103,17 @@
 // nomes = funcionarios.map(pessoa => pessoa.nome);
 // console.log(nomes);
 
-//?
+//? Método REDUCE (Array.reduce() ) reduz um array de valores a um único valor. Para obter o valor de resultado, ele executa uma função de redução em cada elemento do array.
+let numeros = [1, 2, 3, 4, 5, 6];
+let total = numeros.reduce(function(total, numero) {
+    return total + numero;
+}, 0); // Zero é o total.
+console.log(total);
+
+// Exemplo com FOR
+let total2 = 0;
+let numeros2 = [1, 2, 3, 4, 5, 6];
+for (let i = 0; i < numeros.length; i++) {
+    total2 += numeros[i];
+};
+console.log(total2);
