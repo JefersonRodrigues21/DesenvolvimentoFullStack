@@ -25,10 +25,12 @@
     elemento.style.backgroundColor = 'lightgreen';
     document.body.append(elemento); // append é a forma mais rápida de incluir um elemento no DOM, ele inclui o elemento no final do elemento pai, ou seja, no final do body. Se eu quiser incluir o elemento no início do body, eu posso usar o método prepend, que inclui o elemento no início do elemento pai.
 
+    
     let lista = document.getElementById('lista'); 
     let li = document.createElement('li');
     li.textContent = 'Quem somos'; // textContent é a forma mais rápida de incluir texto em um elemento, mas ele não interpreta tags HTML, ou seja, se eu colocar <b>Quem somos</b>, ele vai incluir o texto <b>Quem somos</b, e não vai interpretar a tag <b>.
     lista.appendChild(li);
+
 
     times = ['Real Madri', 'Atletico de Madri', 'Barcelona', 'Juventus'];
     let listaTimes = document.querySelector('ul.listaTime');
