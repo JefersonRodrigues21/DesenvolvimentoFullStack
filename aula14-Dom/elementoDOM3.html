@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elemento DOM 3</title>
+</head>
+<body>
+    
+</body>
+
+
+    <ul id="lista">
+        <li>Produtos</li>
+
+    </ul>
+
+    <ul class="listaTime">
+
+    </ul>
+
+<script>
+    let elemento = document.createElement('div');
+    elemento.innerText = 'Incluindo texto na div';
+    elemento.style.backgroundColor = 'lightgreen';
+    document.body.append(elemento); // append é a forma mais rápida de incluir um elemento no DOM, ele inclui o elemento no final do elemento pai, ou seja, no final do body. Se eu quiser incluir o elemento no início do body, eu posso usar o método prepend, que inclui o elemento no início do elemento pai.
+
+    let lista = document.getElementById('lista'); 
+    let li = document.createElement('li');
+    li.textContent = 'Quem somos'; // textContent é a forma mais rápida de incluir texto em um elemento, mas ele não interpreta tags HTML, ou seja, se eu colocar <b>Quem somos</b>, ele vai incluir o texto <b>Quem somos</b, e não vai interpretar a tag <b>.
+    lista.appendChild(li);
+
+    times = ['Real Madri', 'Atletico de Madri', 'Barcelona', 'Juventus'];
+    let listaTimes = document.querySelector('ul.listaTime');
+
+    for (let i = 0; i < times.length; i++){ // for é a forma mais rápida de percorrer um array, mas ele é mais difícil de ler do que o forEach, que é a forma mais fácil de percorrer um array, mas ele é mais lento do que o for.
+        let time = times[i]; // time é a variável que recebe o valor do elemento do array, ou seja, o nome do time.
+        let listItem = document.createElement('li'); // listItem é a variável que recebe o elemento li criado, ou seja, o item da lista.
+        listItem.innerText = time; // innerText é a forma mais rápida de incluir texto em um elemento, mas ele interpreta tags HTML, ou seja, se eu colocar <b>Real Madri</b>, ele vai incluir o texto Real Madri em negrito, e não vai incluir o texto <b>Real Madri</b>.
+        listItem.style.border = '1px solid blue'; // style é a forma mais rápida de incluir estilos em um elemento, mas ele não é recomendado para incluir muitos estilos, pois ele pode deixar o código bagunçado, e é melhor usar classes CSS para incluir estilos em um elemento.
+        listaTimes.appendChild(listItem); // appendChild é a forma mais rápida de incluir um elemento no DOM, ele inclui o elemento no final do elemento pai, ou seja, no final da ul.listaTimes. Se eu quiser incluir o elemento no início da ul.listaTimes, eu posso usar o método prepend, que inclui o elemento no início do elemento pai.
+    }
+
+</script>
+</html>
