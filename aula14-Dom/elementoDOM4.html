@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elemento DOM 4</title>
 </head>
+
 <body>
     <p>Clique no botão a seguir e veja o resultado</p>
 
@@ -21,9 +22,11 @@
         }
         function passarMousePorCima(){
             document.getElementById('exemplo').innerHTML = 'Evento com Mouse Over';
-        }
+        } //? Ou pode ser assim: let elemento = document.getElementById('exemplo');
+         //?                     elemento.innerHTML = 'Evento com Mouse Over';
         function tirarMouse(){
             document.getElementById('exemplo').innerHTML = 'Evento com Mouse Out';
         }
     </script>
+
 </html>
